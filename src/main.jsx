@@ -21,12 +21,15 @@ import {
 import './styles.css'
 
 // Importando as imagens pelo pipeline do Vite (necessário para funcionar no build de produção)
+import logoImg from './assets/logo.png'
 import heroImg from './assets/hero.png'
-import aboutImg from './assets/about.jpg'
+import aboutImg from './assets/brunasena-sobre.png'
 import result1 from './assets/result1.jpg'
 import result2 from './assets/result2.jpg'
 import result3 from './assets/result3.jpg'
 import result4 from './assets/result4.jpg'
+import factDesktopImg from './assets/fact-desktop.png'
+import factMobileImg from './assets/fact.png'
 
 const wa = 'https://wa.me/5581997786124'
 const instagram = 'https://www.instagram.com/personalbrunasena/'
@@ -120,7 +123,7 @@ function App() {
     <div className="site">
       <header className="header">
         <a className="brand" href="#inicio" onClick={(e)=>{e.preventDefault();go('#inicio')}}>
-          <img className="brand-logo" src="/src/assets/logo.png" alt="Bruna Sena" />
+          <img className="brand-logo" src={logoImg} alt="Bruna Sena" />
           <div>
             <strong>BRUNA SENA</strong>
             <small>PERSONAL TRAINER</small>
@@ -172,7 +175,10 @@ function App() {
         </section>
 
         <section className="fact">
-          <img src="/src/assets/fact-desktop.png" alt="Você sabia?" />
+          <picture>
+            <source media="(max-width: 768px)" srcSet={factMobileImg} />
+            <img src={factDesktopImg} alt="Você sabia?" />
+          </picture>
         </section>
 
         <section id="servicos" className="section services">
@@ -213,7 +219,7 @@ function App() {
 
         <section id="sobre" className="about section">
           <div className="about-photo">
-            <img src="/src/assets/brunasena-sobre.png" alt="Bruna Sena" />
+            <img src={aboutImg} alt="Bruna Sena" />
           </div>
 
           <div className="about-copy">
@@ -265,7 +271,7 @@ function App() {
       <footer className="footer">
         <div className="footer-brand">
           <div className="brand">
-            <img className="brand-logo" src="/src/assets/logo.png" alt="Bruna Sena" />
+            <img className="brand-logo" src={logoImg} alt="Bruna Sena" />
             <div><strong>BRUNA SENA</strong><small>PERSONAL TRAINER</small></div>
           </div>
           <p>Treine com propósito.<br/>Transforme sua vida.</p>
