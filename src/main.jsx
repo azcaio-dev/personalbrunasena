@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { SiWhatsapp } from 'react-icons/si'
 import { createRoot } from 'react-dom/client'
 import {
   Dumbbell,
@@ -156,7 +157,7 @@ function App() {
             <h1>TREINE COM<br/><em>PROPÓSITO.</em><br/>TRANSFORME<br/>SUA VIDA!</h1>
             <p>Mais saúde, mais autoestima e mais qualidade de vida com treinos personalizados e acompanhamento de verdade.</p>
             <div className="hero-actions">
-              <a className="primary" href={wa} target="_blank" rel="noopener noreferrer"><MessageCircle size={16} /> QUERO COMEÇAR AGORA</a>
+              <a className="primary" href={wa} target="_blank" rel="noopener noreferrer"><SiWhatsapp size={16} /> QUERO COMEÇAR AGORA</a>
               <button className="secondary" onClick={()=>go('#servicos')}>CONHECER SERVIÇOS</button>
             </div>
             <div className="mini-features">
@@ -249,20 +250,20 @@ function App() {
         </section>
 
         <section id="contato" className="contact section">
-          <div className="contact-bg-text">TRANSFORME</div>
+          <div className="contact-bg-text">TRANSFORME-SE</div>
 
           <div>
-            <h2>PRONTA PARA <em>SUA<br/>MELHOR FASE?</em></h2>
-            <p>Vamos juntas transformar sua rotina, seu corpo e sua mente!</p>
+            <h2>PRONTO PARA <em>SUA<br/>MELHOR FASE?</em></h2>
+            <p>Vamos juntos transformar sua rotina, seu corpo e sua mente!</p>
           </div>
           <div className="contact-action">
             <span className="contact-label">COMECE SUA TRANSFORMAÇÃO</span>
 
-            <a className="primary large" href={wa} target="_blank" rel="noopener noreferrer"><MessageCircle size={18} /> QUERO COMEÇAR AGORA</a>
+            <a className="primary large" href={wa} target="_blank" rel="noopener noreferrer"><SiWhatsapp size={18} /> QUERO COMEÇAR AGORA</a>
             <span>Ou fale comigo pelas redes sociais</span>
             <div className="socials">
               <a href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={24} /></a>
-              <a href={wa} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><MessageCircle size={24} /></a>
+              <a href={wa} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><SiWhatsapp size={24} /></a>
             </div>
           </div>
         </section>
@@ -274,7 +275,7 @@ function App() {
             <img className="brand-logo" src={logoImg} alt="Bruna Sena" />
             <div><strong>BRUNA SENA</strong><small>PERSONAL TRAINER</small></div>
           </div>
-          <p>Treine com propósito.<br/>Transforme sua vida.</p>
+          <p>Treine com propósito.<br/> Transforme sua vida.</p>
         </div>
         <div>
           <h4>LINKS RÁPIDOS</h4>
@@ -286,10 +287,10 @@ function App() {
         </div>
         <div>
           <h4>FALE COMIGO</h4>
-          <a href={wa} target="_blank" rel="noopener noreferrer"><MessageCircle size={13} /> (81) 99778-6124</a>
+          <a href={wa} target="_blank" rel="noopener noreferrer"><SiWhatsapp size={13} /> (81) 99778-6124</a>
           <a href={instagram} target="_blank" rel="noopener noreferrer"><Instagram size={13} /> @personalbrunasena</a>
         </div>
-        <div className="copyright">© 2025 Bruna Sena Personal Trainer. Todos os direitos reservados.</div>
+        <div className="copyright">© 2026 Bruna Sena Personal Trainer. Todos os direitos reservados.</div>
       </footer>
     </div>
   )

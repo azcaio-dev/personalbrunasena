@@ -1029,16 +1029,35 @@ h2 em,
     background-position: center;
   }
 
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
+  .hero-copy {
+    padding-top: 25px;
+    transform: translateY(-45px);
   }
 
-  .hero-actions .primary,
-  .hero-actions .secondary {
-    width: 100%;
-    text-align: center;
-  }
+ .hero-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}
+
+.hero-actions .primary,
+.hero-actions .secondary {
+  width: auto;
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  justify-content: center;
+  padding: 13px 8px;
+  font-size: 9px;
+}
+
+.mini-features {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
 
   .fact {
     grid-template-columns: 70px 1fr;
@@ -1062,12 +1081,7 @@ h2 em,
   }
 
   .benefit-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .benefit {
-    border-right: 0 !important;
-    border-bottom: 1px solid #292929;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .result-card img {
@@ -1076,12 +1090,50 @@ h2 em,
 
   .about-photo {
     height: 275px;
-    width: 240px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .contact h2 {
     font-size: 38px;
   }
+
+  .mobile-toggle {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.contact-bg-text {
+  font-size: 40px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.footer-brand p br {
+  display: none;
+}
+
+.footer-brand p {
+  white-space: nowrap;
+  font-size: 11px;
+  margin: 4px 0 0;
+}
+
+.footer-brand {
+  gap: 0;
+}
 }
 
 
