@@ -7,7 +7,6 @@ import {
   TrendingUp,
   Laptop,
   User,
-  Users,
   HeartPulse,
   Sparkles,
   Zap,
@@ -25,8 +24,8 @@ import './styles.css'
 import logoImg from './assets/logo.png'
 import heroImg from './assets/hero.png'
 import aboutImg from './assets/brunasena-sobre.png'
-import result1 from './assets/result1.jpg'
-import result2 from './assets/result2.jpg'
+import result1 from './assets/result1.png'
+import result2 from './assets/result2.png'
 import result3 from './assets/result3.jpg'
 import result4 from './assets/result4.jpg'
 import factDesktopImg from './assets/fact-desktop.png'
@@ -47,12 +46,6 @@ const services = [
     title: 'PERSONAL',
     accent: 'PRESENCIAL',
     text: 'Treinos individualizados e acompanhamento exclusivo para resultados reais e duradouros.'
-  },
-  {
-    icon: Users,
-    title: 'TREINOS EM',
-    accent: 'GRUPO',
-    text: 'Motivação coletiva, energia contagiante e resultados que vão além do treino.'
   }
 ]
 
